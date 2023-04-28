@@ -126,6 +126,8 @@ INTERFACE zif_dt_ajson
       VALUE(ri_json) TYPE REF TO zif_dt_ajson.
 
   METHODS to_abap
+    IMPORTING
+      iv_corresponding TYPE abap_bool DEFAULT abap_false
     EXPORTING
       ev_container TYPE any
     RAISING

@@ -927,6 +927,7 @@ CLASS zcl_dt_ajson IMPLEMENTATION.
     CLEAR ev_container.
     CREATE OBJECT lo_to_abap
       EXPORTING
+        iv_corresponding  = iv_corresponding
         ii_custom_mapping = mi_custom_mapping.
 
     lo_to_abap->to_abap(
